@@ -1,0 +1,67 @@
+﻿You are given a program written on Simple Language. There's only one variable called  in this programming language. Initially, . The program consists of  lines. Each line is one of the following:
+
+ ( is an integer) — add  to .
+ ( is an integer) — set the value of  to .
+Here's an example program and also illustrates what happens to  after running each line:
+
+        x = 0
+add 5
+        x = 5
+add -3
+        x = 2
+set 1
+        x = 1
+add -2
+        x = -1
+add 5
+        x = 4
+Given a program, your task is to remove some lines (possibly none or all of them) in such a way that the value of after running the resulting program will be the maximum. Find this maximum value.
+
+Complete the function maximumProgramValue which takes in an integer  denoting the number of lines of the program and returns the maximum value. You will need to take the program's lines from the standard input.
+
+Input Format
+
+The first line contains a single integer .
+
+The next  lines describe the program. Each of these lines contains a string  and an integer  separated by a space, where  or .
+
+Constraints
+
+Output Format
+
+Print a single integer denoting the answer.
+
+Sample Input 0
+
+3
+add 2
+set 1
+add -1
+Sample Output 0
+
+2
+Explanation 0
+
+In this test case, the second and third lines of code are removed.
+
+Sample Input 1
+
+2
+set 5
+add 6
+Sample Output 1
+
+11
+Explanation 1
+
+In this test case, no line of code is removed.
+
+Sample Input 2
+
+3
+add -1
+set -3
+add -2
+Sample Output 2
+
+0
